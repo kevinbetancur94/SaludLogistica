@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SaludLogística</title>
+</head>
+<body>
+
+  <!--
+    Toda la salida se muestra en la CONSOLA del navegador (F12).
+    No se manipula el DOM en ningún momento.
+    Abre este archivo con Live Server (VS Code) para que los módulos funcionen.
+  -->
+
+  <script type="module">
+    // Importamos las 4 funciones del controlador y las ejecutamos en orden
+    import {
+      procesarSolicitudes,
+      generarReportePorPrioridad,
+      emitirAlertasCriticas,
+      mostrarEstadoFinal
+    } from "./src/controllers/SolicitudController.js";
+
+    procesarSolicitudes();
+    generarReportePorPrioridad();
+    emitirAlertasCriticas();
+    mostrarEstadoFinal();
+  </script>
+
+</body>
+</html>
